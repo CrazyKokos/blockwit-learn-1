@@ -7,20 +7,17 @@ import java.util.Scanner;
 
 public class Tasks4t2 {
     public static void main(String[] args) {
-        System.out.println(" Назовите пять ваших имен.");
-        Scanner n = new Scanner(System.in);
-        String name = n.nextLine();
-        System.out.println(name);
-        String name2 = n.nextLine();
-        System.out.println(name2);
-        String name3 = n.nextLine();
-        System.out.println(name3);
-        String name4 = n.nextLine();
-        System.out.println(name4);
-        String name5 = n.nextLine();
-        System.out.println(name5);
-        System.out.println(name + " " + name2 + " " + name3 + " " + " " + name4 + " " + name5);
-        n.close();
+        Scanner in = new Scanner(System.in);
+        String[] name = new String[5];
+        for (int i = 0; i < name.length; i++) {
+            System.out.println(" Введите " + (i + 1) + " имя ");
+            name[i] = in.nextLine();
+        }
+        System.out.println(" Вы ввели имена: ");
+        for (int i = 0; i < name.length; i++) {
+            System.out.println(name[i]);
+        }
+        in.close();
 
     }
 }
