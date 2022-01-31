@@ -26,7 +26,7 @@ public class Tu0 {
             }
         } while (count > 0);
         for (int num : a) {
-            System.out.println(num + " . ");
+            System.out.print(num + " . ");
         }
     }
 }
